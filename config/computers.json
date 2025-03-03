@@ -1,1 +1,12 @@
-[{"id":1,"name":"Computer1","brand":"Asus"},{"id":2,"name":"Computer2","brand":"MSI"}]
+[
+    {
+        "id": 1,
+        "name": "Computer1",
+        "brand": "Asus"
+    },
+    {
+        "id": 2,
+        "name": "Computer5",
+        "brand": "Sololo"
+    }
+]

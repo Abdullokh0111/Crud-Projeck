@@ -20,4 +20,10 @@ let addNewPc = (data) => {
     fs.writeFileSync("./config/computers.json", JSON.stringify(newPc));
   };
 
-module.exports = { getAllPc, addNewPc, deletePc };
+  let updatePc = (id, data) => {
+    let pc = JSON.parse(fs.readFileSync("./config/computers.json", "utf8"));
+    let newPc = pc.map(item => item.id == id ? {...item, ...data} : item);
+    fs.writeFileSync("./config/computers.json", JSON.stringify(newPc));
+  };
+
+module.exports = { getAllPc, addNewPc, deletePc, updatePc };
